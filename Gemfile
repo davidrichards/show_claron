@@ -2,11 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-gem 'pg'
-
+gem "haml-rails"
+gem "devise"
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -18,6 +15,30 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+  gem 'twitter-bootstrap-rails'
+end
+
+gem 'simple_form'
+
+group :development, :test do
+  gem 'sqlite3'
+  gem "minitest-rails"
+end
+
+group :test do
+  gem "minitest-rails-capybara"
+  gem "awesome_print"
+  gem 'pry'
+  gem 'debugger'
+  gem 'minitest-rg'
+  gem "autotest"
+  gem 'mocha'
+  gem 'simplecov', :require => false
+  gem 'simplecov-rcov', :require => false
+end
+
+group :production, :assets do
+  gem "pg"
 end
 
 gem 'jquery-rails'
@@ -29,10 +50,8 @@ gem 'jquery-rails'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'debugger'
+gem 'capistrano'
+gem "rvm-capistrano"
