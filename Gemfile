@@ -38,7 +38,7 @@ group :test do
 end
 
 group :production, :assets do
-  gem "pg"
+#  gem "pg"
 end
 
 gem 'jquery-rails'
