@@ -134,7 +134,6 @@ GEM
       net-ssh (>= 1.99.1)
     nokogiri (1.5.5)
     orm_adapter (0.4.0)
-    pg (0.14.1)
     polyglot (0.3.3)
     pry (0.9.10)
       coderay (~> 1.0.5)
@@ -235,7 +234,6 @@ DEPENDENCIES
   minitest-rails-capybara
   minitest-rg
   mocha
-  pg
   pry
   rails (= 3.2.8)
   rvm-capistrano
